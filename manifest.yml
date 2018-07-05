@@ -1,0 +1,10 @@
+---
+applications:
+ - name: rak-ewallet-service
+   env: 
+      GOOGLE_APPLICATION_CREDENTIALS: WEB-INF/classes/ocr-key.json
+   random-route: true
+   path: target/e-wallet-service-0.0.1-SNAPSHOT
+   memory: 4GB
+   instances: 1
+   buildpack: java_buildpack
